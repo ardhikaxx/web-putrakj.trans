@@ -128,6 +128,16 @@ a:hover {
   font-weight: 600;
 }
 
+.schedule-card {
+  background-color: #343a40;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+}
+.schedule-card h5 {
+  color: #007CC4;
+}
+
 .site-navbar-wrap {
   position: absolute;
   z-index: 99;
