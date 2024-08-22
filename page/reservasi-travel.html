@@ -147,7 +147,7 @@
     </header>
 
     <section class="form-section d-flex align-items-center py-5">
-        <div class="container py-5 form-container text-white">
+        <div class="container py-5 mt-5 form-container text-white">
             <h2 class="text-center">RESERVASI</h2>
             <form>
                 <div class="row g-4">
@@ -191,7 +191,7 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="route" class="form-label">
-                                    <i class="fas fa-map-marker-alt form-icon"></i> Rute Layanan
+                                    <i class="fa-solid fa-map-location-dot form-icon"></i> Rute Layanan
                                 </label>
                                 <select id="route" name="route" class="form-select">
                                     <option selected disabled value>Pilih Rute</option>
@@ -283,14 +283,14 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="pickup-address" class="form-label">
-                                    <i class="fas fa-map-marker form-icon"></i> Alamat Penjemputan
+                                    <i class="fa-solid fa-location-dot form-icon"></i> Alamat Penjemputan
                                 </label>
                                 <textarea id="pickup-address" name="pickup-address" class="form-control" rows="2"
                                     placeholder="Masukkan Alamat Penjemputan"></textarea>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="destination-address" class="form-label">
-                                    <i class="fas fa-map-marker form-icon"></i> Alamat Tujuan
+                                    <i class="fa-solid fa-location-dot form-icon"></i> Alamat Tujuan
                                 </label>
                                 <textarea id="destination-address" name="destination-address" class="form-control"
                                     rows="2" placeholder="Masukkan Alamat Tujuan"></textarea>
@@ -310,7 +310,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary btn-lg px-5 fw-bold">Pesan<i class="ml-2 fa-regular fa-paper-plane fa-bounce"></i></button>
+                    <button type="button" class="btn btn-primary btn-lg px-5 fw-bold" onclick="sendWhatsAppReservation()">Pesan <i class="ml-2 fa-regular fa-paper-plane fa-bounce"></i></button>
                 </div>
             </form>
         </div>
