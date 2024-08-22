@@ -96,35 +96,58 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-function sendWhatsAppReservation() {
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
-    const whatsapp = document.getElementById('whatsapp').value;
-    const route = document.getElementById('route').value;
-    const departureTime = document.getElementById('departure-time').value;
-    const bookingType = document.getElementById('booking-type').value;
-    const passengerCount = document.getElementById('passenger-count').value;
-    const pickupAddress = document.getElementById('pickup-address').value;
-    const destinationAddress = document.getElementById('destination-address').value;
-    const specialRequest = document.getElementById('special-request').value;
+function validateAndSendMessage() {
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const whatsapp = document.getElementById('whatsapp').value.trim();
+    const route = document.getElementById('route').value.trim();
+    const departureDate = document.getElementById('departure-date').value.trim();
+    const departureTime = document.getElementById('departure-time').value.trim();
+    const bookingType = document.getElementById('booking-type').value.trim();
+    const passengerCount = document.getElementById('passenger-count').value.trim();
+    const pickupAddress = document.getElementById('pickup-address').value.trim();
+    const destinationAddress = document.getElementById('destination-address').value.trim();
+    const specialRequest = document.getElementById('special-request').value.trim();
 
-    const message = `Halo, saya ingin melakukan reservasi dengan rincian sebagai berikut:\n\n` +
-                    `*Nama Lengkap:* ${name}\n` +
-                    `*Nomor Telepon:* ${phone}\n` +
-                    `*Email:* ${email}\n` +
-                    `*Nomor WhatsApp:* ${whatsapp}\n\n` +
-                    `*Rute Layanan:* ${route}\n` +
-                    `*Waktu Pemberangkatan:* ${departureTime}\n` +
-                    `*Jenis Pemesanan:* ${bookingType}\n` +
-                    `*Jumlah Penumpang:* ${passengerCount}\n\n` +
-                    `*Alamat Penjemputan:* ${pickupAddress}\n` +
-                    `*Alamat Tujuan:* ${destinationAddress}\n\n` +
-                    `*Pesan Tambahan:* ${specialRequest || 'Tidak ada'}`;
+    let emptyFields = [];
 
-    const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '6281334543419';
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    if (!name) emptyFields.push("Nama Lengkap");
+    if (!phone) emptyFields.push("Nomor Telepon");
+    if (!email) emptyFields.push("Email");
+    if (!whatsapp) emptyFields.push("Nomor WhatsApp");
+    if (!route) emptyFields.push("Rute Layanan");
+    if (!departureDate) emptyFields.push("Tanggal Pemberangkatan");
+    if (!departureTime) emptyFields.push("Jam Pemberangkatan");
+    if (!bookingType) emptyFields.push("Jenis Pemesanan");
+    if (!passengerCount) emptyFields.push("Jumlah Penumpang");
+    if (!pickupAddress) emptyFields.push("Alamat Penjemputan");
+    if (!destinationAddress) emptyFields.push("Alamat Tujuan");
 
-    window.open(whatsappUrl, '_blank');
+    if (emptyFields.length > 0) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Data Tidak Lengkap',
+            text: `Harap mengisi bidang berikut: ${emptyFields.join(', ')}.`,
+        });
+    } else {
+        const message = `Halo, saya ingin melakukan reservasi dengan rincian sebagai berikut:\n\n` +
+            `• *Nama Lengkap:* ${name}\n` +
+            `• *Nomor Telepon:* ${phone}\n` +
+            `• *Email:* ${email}\n` +
+            `• *Nomor WhatsApp:* ${whatsapp}\n\n` +
+            `• *Rute Layanan:* ${route}\n` +
+            `• *Tanggal Pemberangkatan:* ${departureDate}\n` +
+            `• *Jam Pemberangkatan:* ${departureTime}\n\n` +
+            `• *Jenis Pemesanan:* ${bookingType}\n` +
+            `• *Jumlah Penumpang:* ${passengerCount}\n\n` +
+            `• *Alamat Penjemputan:* ${pickupAddress}\n` +
+            `• *Alamat Tujuan:* ${destinationAddress}\n\n` +
+            `• *Pesan Tambahan:* ${specialRequest || 'Tidak ada'}`;
+
+        const encodedMessage = encodeURIComponent(message);
+        const phoneNumber = '6281334543419';
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+    }
 }
