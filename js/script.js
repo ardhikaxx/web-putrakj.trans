@@ -2,6 +2,60 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.site-menu a.nav-link');
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const scrollToParam = urlParams.get('scrollTo') || sessionStorage.getItem('scrollTo');
+
+    if (scrollToParam) {
+        sessionStorage.removeItem('scrollTo');
+        const targetSection = document.getElementById(scrollToParam);
+        if (targetSection) {
+            history.replaceState(null, null, window.location.pathname);
+            setTimeout(() => {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+    }
+
+    document.querySelectorAll('a[href*="#"]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
+                const targetId = href.substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    e.preventDefault();
+                    history.replaceState(null, null, ' ');
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else if (href.startsWith('?')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                window.location.href = '?scrollTo=' + targetId;
+            } else if (href.includes('#')) {
+                e.preventDefault();
+                const baseUrl = href.split('#')[0];
+                const targetId = href.split('#')[1];
+                window.location.href = baseUrl + '?scrollTo=' + targetId;
+            }
+        });
+    });
+
+    window.addEventListener('load', function () {
+        if (window.location.search.includes('scrollTo=')) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const scrollTo = urlParams.get('scrollTo');
+            if (scrollTo) {
+                history.replaceState(null, null, window.location.pathname);
+                const targetSection = document.getElementById(scrollTo);
+                if (targetSection) {
+                    setTimeout(() => {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            }
+        }
+    });
+
     window.onscroll = () => {
         let current = "";
 
