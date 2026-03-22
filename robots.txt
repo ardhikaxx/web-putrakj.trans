@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.putrakjtrans.com/sitemap.xml
+Sitemap: https://www.putrakjtrans.com/sitemap.html
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /assets/
+
+User-agent: *
+Disallow: /page/*/index.html
