@@ -1,124 +1,101 @@
-# PUTRAKJ.TRANS - Travel Jawa Timur Terpercaya
+# 🚌 Website Travel - PutraKJ Trans
 
-[![Website](https://img.shields.io/badge/Website-PUTRAKJ.TRANS-blue?style=flat-square)](https://www.putrakjtrans.com)
-[![License](https://img.shields.io/badge/License-All_Rights_Reserved-red?style=flat-square)]()
-[![Status](https://img.shields.io/badge/Status-Active-green?style=flat-square)]()
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](./LICENSE)
+[![Author](https://img.shields.io/badge/Author-Yanuar%20Ardhika%20Rahmadhani%20Ubaidillah-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ardhikaxx)
 
-Website resmi PUTRAKJ.TRANS - Penyedia layanan travel antar kota terpercaya di Jawa Timur dengan armada nyaman dan driver profesional.
-
-## 🏠 Tentang Kami
-
-PUTRAKJ.TRANS adalah layanan travel antar kota terpercaya yang beroperasi di Jawa Timur. Kami menyediakan berbagai layanan transportasi mulai dari shuttle reguler, carter mobil, drop off, hingga perjalanan dinas dan wisata. Dengan armada kendaraan yang nyaman dan driver berpengalaman, kami siap mengantar Anda ke berbagai destinations di Jawa Timur dan Bali.
-
-## 🚗 Layanan Kami
-
-- **Travel Reguler** - Shuttle harian antar kota dengan jadwal fleksibel
-- **Carter Mobil / Drop Off** - Layanan antar jemput sesuai kebutuhan
-- **Perjalanan Dinas** - Layanan transport untuk kebutuhan perusahaan
-- **Wisata** - Eksplorasi destinasi wisata terbaik di Jawa Timur
-
-## 📍 Rute Layanan
-
-Kami melayani berbagai rute perjalanan meliputi:
-
-| Kota Asal | Kota Tujuan |
-|-----------|-------------|
-| Surabaya | Jember, Malang, Kediri, Bali, Lumajang, Banyuwangi, Bondowoso, Tuban, Lamongan, Bojonegoro |
-| Malang | Surabaya, Jerez, Lumajang, Banyuwangi, Bali |
-| Jerez | Surabaya, Malang, Bali |
-| Denpasar/Bali | Surabaya, Malang, Jerez, Lumajang, Banyuwangi |
-| Lumajang | Surabaya, Malang, Denpasar |
-| Banyuwangi | Surabaya, Malang, Denpasar |
-| Kediri | Surabaya |
-
-## ✨ Keunggulan
-
-- ✅ Armada kendaraan nyaman (Innova, Wuling, dll)
-- ✅ Driver profesional dan berpengalaman
-- ✅ Layanan door-to-door
-- ✅ Jadwal fleksibel
-- ✅ Harga terjangkau
-- ✅ Customer service responsif
-
-## 📱 Kontak
-
-- **WhatsApp**: [+62 813 3454 3419](https://wa.me/6281334543419)
-- **Instagram**: [@putrakj.trans](https://www.instagram.com/putrakj.trans/)
-
-## 🛠️ Teknologi
-
-Website ini dibangun menggunakan:
-
-- **HTML5** - Struktur website
-- **CSS3** - Styling dan desain responsif
-- **JavaScript** - Interaktivitas
-- **Bootstrap 5** - Framework CSS untuk responsivitas
-- **Font Awesome** - Ikon
-- **jQuery** - Library JavaScript
-
-## 📂 Struktur Proyek
-
-```
-Website-Putrakjtrans/
-├── assets/              # Gambar dan media
-├── css/                # Stylesheet
-├── fonts/              # Font dan ikon
-├── js/                 # JavaScript
-├── page/               # Halaman lainnya
-│   ├── banyuwangi/     # Halaman travel Banyuwangi
-│   ├── denpasar/       # Halaman travel Denpasar/Bali
-│   ├── jember/         # Halaman travel Jerez
-│   ├── kediri/         # Halaman travel Kediri
-│   ├── lumajang/       # Halaman travel Lumajang
-│   ├── malang/         # Halaman travel Malang
-│   ├── surabaya/       # Halaman travel Surabaya
-│   └── reservasi-travel.html
-├── index.html          # Halaman utama
-├── sitemap.xml         # Sitemap untuk SEO
-├── sitemap.html        # Sitemap untuk visitor
-├── robots.txt         # Konfigurasi robot
-└── README.md           # Dokumentasi ini
-```
-
-## 🔧 Cara Pengembangan
-
-### Local Development
-
-1. Clone repositori:
-```bash
-git clone https://github.com/ardhikaxx/web-putrakj.trans.git
-```
-
-2. Buka dengan Live Server atau web server lokal:
-```bash
-# Menggunakan VS Code Live Server
-# Atau python
-python -m http.server 8000
-```
-
-3. Buka di browser: `http://localhost:8000`
-
-## 🔍 SEO
-
-Website ini telah dioptimasi untuk mesin pencarian dengan:
-
-- Meta tags lengkap (title, description, keywords)
-- Open Graph tags untuk media sosial
-- Twitter Card tags
-- JSON-LD Structured Data (LocalBusiness)
-- Sitemap XML untuk Google
-- robots.txt untuk crawling
-
-## 📄 Lisensi
-
-Hak cipta © 2026 PUTRAKJ.TRANS. Semua hak dilindungi.
-
-## 🔗 Link Terkait
-
-- [Website Resmi](https://www.putrakjtrans.com)
-- [Reservasi Travel](https://www.putrakjtrans.com/page/reservasi-travel.html)
-- [Sitemap](https://www.putrakjtrans.com/sitemap.html)
+Website **PutraKJ Trans** adalah portal travel & sewa armada: rute & jadwal, booking kursi online, katalog armada (ELF, Hiace, Bus), galeri, testimoni, dan admin booking. Memudahkan calon penumpang memesan tanpa harus ke loket.
 
 ---
 
-Dibuat dengan ❤️ oleh PUTRAKJ.TRANS
+## ✨ Fitur Utama
+
+### 1. 🗺️ Rute & Jadwal
+- Daftar trayek, jam berangkat, dan tarif.
+
+### 2. 💺 Booking Kursi
+- Pilih jadwal → pilih kursi → isi penumpang → konfirmasi.
+
+### 3. 🚌 Armada
+- Katalog armada dengan foto & fasilitas.
+
+### 4. ⭐ Testimoni
+- Ulasan penumpang terverifikasi.
+
+### 5. 📊 Admin Booking
+- Kelola jadwal, kursi, penumpang, dan laporan.
+
+---
+
+## 👥 Hak Akses Pengguna (Role-Based Access Control)
+
+| Role | Akses & Wewenang |
+| :--- | :--- |
+| **Penumpang** | Lihat jadwal, booking, lacak tiket. |
+| **Admin/Operator** | Jadwal, armada, booking, laporan. |
+
+> Otorisasi ditegakkan di backend (middleware/Policy) — bukan sekadar menyembunyikan menu.
+
+---
+
+## 🛠️ Tech Stack & Dependensi
+
+* **Frontend**: HTML5, CSS3, JavaScript
+* **Styling**: Bootstrap 5 / Custom CSS
+* **Server**: Apache/Nginx atau Live Server untuk preview
+
+---
+
+## ⚙️ Panduan Instalasi & Menjalankan Aplikasi
+
+### 1. Kloning Repositori
+```bash
+git clone https://github.com/ardhikaxx/web-putrakj.trans
+cd web-putrakj.trans
+```
+
+### 2. Jalankan
+- Buka `index.html` langsung di browser, atau
+- Via VS Code Live Server, atau
+- Via XAMPP: simpan di `htdocs/web-putrakj.trans` lalu buka `http://localhost/web-putrakj.trans`
+
+---
+
+## 📚 Dokumentasi Sistem
+
+* [⚖️ **LICENSE**](./LICENSE) — Lisensi resmi **Proprietary Software License (All Rights Reserved)**.
+* [🛡️ **SECURITY.md**](./SECURITY.md) — Kebijakan keamanan & pelaporan celah (*Responsible Disclosure*).
+* [🤝 **CONTRIBUTING.md**](./CONTRIBUTING.md) — Pedoman kontribusi kode & standar.
+* [📜 **CODE_OF_CONDUCT.md**](./CODE_OF_CONDUCT.md) — Pedoman perilaku komunitas pengembang.
+* [💬 **SUPPORT.md**](./SUPPORT.md) — Kanal bantuan teknis & komunikasi resmi pengembang.
+* [📋 **CHANGELOG.md**](./CHANGELOG.md) — Riwayat rilis fitur terstruktur (*Keep a Changelog* & SemVer).
+* [📚 **CITATION.md**](./CITATION.md) — Format sitasi karya untuk keperluan akademik.
+
+---
+
+## 💖 Dukungan & Donasi
+
+Jika proyek **Website Travel - PutraKJ Trans** ini bermanfaat bagi Anda dan telah menghemat banyak jam kerja Anda, Anda dapat menunjukkan apresiasi dengan memberikan traktiran kopi (donasi) melalui pemindaian kode QRIS di bawah ini:
+
+<p align="center">
+  <img src="./qris.png" alt="QRIS Donasi" width="300"/>
+</p>
+
+> Donasi sepenuhnya bersifat sukarela dan tidak mengikat. Aplikasi tetap dapat digunakan secara utuh tanpa donasi.
+
+---
+
+## ⚠️ Ketentuan Penggunaan
+
+Proyek ini dilindungi lisensi **Proprietary Software License (All Rights Reserved)**. Anda **dilarang** menyalin, memodifikasi, mendistribusikan ulang, atau menjual kode ini tanpa izin tertulis dari pemilik hak cipta. Lihat [LICENSE](./LICENSE) untuk detail lengkap.
+
+---
+
+## 👨‍💻 Pengembang & Hak Cipta
+
+Dirancang dan dikembangkan dengan penuh dedikasi oleh:
+**[Yanuar Ardhika Rahmadhani Ubaidillah (@ardhikaxx)](https://github.com/ardhikaxx)**
+*Lead Software Architect & Maintainer*
+
+> **Copyright (c) 2024 - 2026 Yanuar Ardhika Rahmadhani Ubaidillah (@ardhikaxx). All Rights Reserved.**
